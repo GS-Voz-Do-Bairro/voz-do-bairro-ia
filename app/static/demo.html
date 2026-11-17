@@ -1,0 +1,30 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voz do Bairro – demo da IA</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:24px auto;padding:0 16px;color:#1a1a1a}
+input,textarea,select,button{font:inherit;padding:8px;margin:4px 0;width:100%;box-sizing:border-box}
+button{width:auto;cursor:pointer}pre{background:#f4f4f4;padding:12px;overflow:auto;white-space:pre-wrap}
+.row{display:flex;gap:8px}.ok{color:#0a7}.warn{color:#b60}</style></head><body>
+<h1>Voz do Bairro – IA</h1>
+<p>Demonstração: escreva ou grave a proposta. A IA transcreve, organiza e avisa se já existe algo parecido.</p>
+<label>Chave da API (X-API-Key, se configurada)<input id="key" type="password" autocomplete="off"></label>
+<label>Bairro<select id="bairro"><option>Jardim das Acácias</option><option>Vila Nova</option><option>Centro</option><option>Parque Industrial</option></select></label>
+<label>Proposta (texto)<textarea id="texto" rows="4" maxlength="2000" placeholder="Ex.: tem um buraco enorme na rua das flores"></textarea></label>
+<div class="row"><button id="enviar">Analisar texto</button><button id="gravar">🎙 Gravar áudio</button></div>
+<p id="status" class="warn"></p><pre id="saida">Resultado aparece aqui.</pre>
+<script>
+const $=id=>document.getElementById(id);
+const hdr=()=>$("key").value?{"X-API-Key":$("key").value}:{};
+const mostrar=async r=>{const j=await r.json().catch(()=>({}));$("saida").textContent=JSON.stringify(j,null,2);$("status").textContent=r.ok?"":"Erro "+r.status;};
+$("enviar").onclick=async()=>{$("status").textContent="Analisando…";
+ mostrar(await fetch("/propostas/analisar",{method:"POST",headers:{"Content-Type":"application/json",...hdr()},body:JSON.stringify({texto:$("texto").value,bairro:$("bairro").value})}));};
+let rec=null,pedacos=[];
+$("gravar").onclick=async()=>{
+ if(rec){rec.stop();return;}
+ try{const s=await navigator.mediaDevices.getUserMedia({audio:true});rec=new MediaRecorder(s);pedacos=[];
+  rec.ondataavailable=e=>pedacos.push(e.data);
+  rec.onstop=async()=>{s.getTracks().forEach(t=>t.stop());$("gravar").textContent="🎙 Gravar áudio";rec=null;$("status").textContent="Transcrevendo…";
+   const f=new FormData();f.append("arquivo",new Blob(pedacos,{type:"audio/webm"}),"gravacao.webm");f.append("bairro",$("bairro").value);
+   mostrar(await fetch("/audio/propostas",{method:"POST",headers:hdr(),body:f}));};
+  rec.start();$("gravar").textContent="⏹ Parar e enviar";$("status").textContent="Gravando…";
+ }catch(e){$("status").textContent="Microfone indisponível: "+e.message;}};
+</script></body></html>
