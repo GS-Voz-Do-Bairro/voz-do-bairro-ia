@@ -1,0 +1,2 @@
+Coloque aqui áudios reais (.m4a/.mp3/.wav) e, para cada um, um .txt com o que foi dito.
+Depois: python scripts/avaliar_audio.py data/audios

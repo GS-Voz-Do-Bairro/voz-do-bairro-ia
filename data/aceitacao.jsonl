@@ -1,0 +1,40 @@
+{"tipo": "duplicada", "issue_esperado": "m01", "bairro": "Jardim das Acácias", "texto": "Moro perto da padaria e a rua das flores virou um buraco só, ontem um carro ficou preso nele"}
+{"tipo": "duplicada", "issue_esperado": "m02", "bairro": "Jardim das Acácias", "texto": "o farol da avenida brasil com a rua das flores parou de funcionar, cuidado quem passa"}
+{"tipo": "duplicada", "issue_esperado": "m03", "bairro": "Vila Nova", "texto": "falta pintar as listras pra atravessar na frente da escola santos dumont"}
+{"tipo": "duplicada", "issue_esperado": "m04", "bairro": "Centro", "texto": "Os idosos que esperam o ônibus na XV de Novembro ficam expostos à chuva, falta um abrigo."}
+{"tipo": "duplicada", "issue_esperado": "m05", "bairro": "Parque Industrial", "texto": "Quem trabalha nas fábricas precisa de mais viagens do 305 de manhã cedo"}
+{"tipo": "duplicada", "issue_esperado": "m06", "bairro": "Jardim das Acácias", "texto": "Impossível andar de cadeira de rodas na calçada da Rua das Flores, está esburacada"}
+{"tipo": "duplicada", "issue_esperado": "m07", "bairro": "Vila Nova", "texto": "Ciclistas da Avenida das Palmeiras precisam de espaço próprio, uma faixa só pra bicicleta"}
+{"tipo": "duplicada", "issue_esperado": "z01", "bairro": "Jardim das Acácias", "texto": "a rua das flores está um breu à noite porque as lâmpadas dos postes queimaram"}
+{"tipo": "duplicada", "issue_esperado": "z02", "bairro": "Vila Nova", "texto": "Terreno abandonado da Santos Dumont acumulando lixo e bicho, precisa limpar"}
+{"tipo": "duplicada", "issue_esperado": "z03", "bairro": "Centro", "texto": "O lixo do Centro não está sendo recolhido, já faz dias que nenhum caminhão passa"}
+{"tipo": "duplicada", "issue_esperado": "z04", "bairro": "Parque Industrial", "texto": "Quando chove a Rua das Indústrias alaga porque o bueiro está entupido de lixo"}
+{"tipo": "duplicada", "issue_esperado": "z05", "bairro": "Jardim das Acácias", "texto": "Os galhos da árvore da Rua dos Ipês estão encostando na rede elétrica, pode cortar?"}
+{"tipo": "duplicada", "issue_esperado": "z08", "bairro": "Jardim das Acácias", "texto": "O esgoto está escorrendo na Rua dos Ipês, tem mau cheiro e mosquito"}
+{"tipo": "duplicada", "issue_esperado": "s01", "bairro": "Vila Nova", "texto": "A UBS da Vila Nova está sem médico faz um tempão, só tem atendimento de enfermagem"}
+{"tipo": "duplicada", "issue_esperado": "s02", "bairro": "Centro", "texto": "No posto do Centro acabou o remédio da pressão, meu pai ficou sem"}
+{"tipo": "duplicada", "issue_esperado": "s03", "bairro": "Jardim das Acácias", "texto": "Esperei meses por uma consulta no posto das Acácias, precisa de mais vagas"}
+{"tipo": "duplicada", "issue_esperado": "s04", "bairro": "Parque Industrial", "texto": "Pneus velhos com água acumulada no Parque Industrial podem causar dengue"}
+{"tipo": "duplicada", "issue_esperado": "s07", "bairro": "Parque Industrial", "texto": "O SAMU leva muito tempo pra chegar no Parque Industrial, precisa de base mais perto"}
+{"tipo": "duplicada", "issue_esperado": "l01", "bairro": "Jardim das Acácias", "texto": "O balanço e o escorregador da praça das Acácias estão quebrados, criança pode se ferir"}
+{"tipo": "duplicada", "issue_esperado": "l06", "bairro": "Centro", "texto": "Queremos a biblioteca do Centro aberta de novo, ela está fechada há muito tempo"}
+{"tipo": "nova_facil", "issue_esperado": null, "bairro": "Jardim das Acácias", "texto": "Instalar um bicicletário seguro no terminal de ônibus do Jardim das Acácias"}
+{"tipo": "nova_facil", "issue_esperado": null, "bairro": "Jardim das Acácias", "texto": "Criar uma horta comunitária no bairro para as famílias plantarem"}
+{"tipo": "nova_facil", "issue_esperado": null, "bairro": "Vila Nova", "texto": "Instalar um posto de vacinação contra a gripe no mercado da Vila Nova"}
+{"tipo": "nova_facil", "issue_esperado": null, "bairro": "Vila Nova", "texto": "Colocar lixeiras de coleta seletiva nas ruas da Vila Nova"}
+{"tipo": "nova_facil", "issue_esperado": null, "bairro": "Centro", "texto": "Criar uma área de embarque para carros de aplicativo no Centro"}
+{"tipo": "nova_facil", "issue_esperado": null, "bairro": "Centro", "texto": "Promover shows gratuitos de música na Praça Central nos fins de semana"}
+{"tipo": "nova_facil", "issue_esperado": null, "bairro": "Centro", "texto": "Programa de caminhadas orientadas para a saúde dos idosos do Centro"}
+{"tipo": "nova_facil", "issue_esperado": null, "bairro": "Parque Industrial", "texto": "Pavimentar a rua de terra que dá acesso aos galpões do Parque Industrial"}
+{"tipo": "nova_facil", "issue_esperado": null, "bairro": "Parque Industrial", "texto": "Oferecer exames de vista gratuitos para os trabalhadores do Parque Industrial"}
+{"tipo": "nova_facil", "issue_esperado": null, "bairro": "Parque Industrial", "texto": "Construir uma quadra de vôlei de areia no Parque Industrial"}
+{"tipo": "nova_dificil", "issue_esperado": null, "bairro": "Jardim das Acácias", "texto": "Falta lixeira na Rua das Flores, o povo joga lixo no chão"}
+{"tipo": "nova_dificil", "issue_esperado": null, "bairro": "Jardim das Acácias", "texto": "Pedimos uma lombada na Rua das Flores porque os carros passam muito rápido"}
+{"tipo": "nova_dificil", "issue_esperado": null, "bairro": "Jardim das Acácias", "texto": "A Praça das Acácias precisa de mais bancos para os idosos sentarem"}
+{"tipo": "nova_dificil", "issue_esperado": null, "bairro": "Jardim das Acácias", "texto": "A sala de espera da UBS do Jardim das Acácias não tem ventilador nem cadeiras suficientes"}
+{"tipo": "nova_dificil", "issue_esperado": null, "bairro": "Vila Nova", "texto": "Falta bebedouro na quadra esportiva da Vila Nova"}
+{"tipo": "nova_dificil", "issue_esperado": null, "bairro": "Vila Nova", "texto": "O posto de saúde da Vila Nova precisa de rampa de acessibilidade na entrada"}
+{"tipo": "nova_dificil", "issue_esperado": null, "bairro": "Centro", "texto": "Instalar paraciclo na Rua XV de Novembro"}
+{"tipo": "nova_dificil", "issue_esperado": null, "bairro": "Centro", "texto": "A UBS do Centro precisa de uma sala de vacinação"}
+{"tipo": "nova_dificil", "issue_esperado": null, "bairro": "Parque Industrial", "texto": "A Rua das Indústrias precisa de calçada, os trabalhadores andam no meio da rua"}
+{"tipo": "nova_dificil", "issue_esperado": null, "bairro": "Parque Industrial", "texto": "Instalar iluminação na pista de caminhada do Parque Industrial"}
