@@ -1,0 +1,463 @@
+{
+ "duplicadas": [
+  {
+   "agrupamento": {
+    "propostas": 68,
+    "problemas_reais": 17,
+    "grupos_encontrados": 13,
+    "ari": 0.452,
+    "homogeneidade": 0.742,
+    "completude": 0.943
+   },
+   "embedder": "palavras",
+   "limiares": {
+    "duplicada": 0.175,
+    "relacionada": 0.055
+   },
+   "pares_teste": 550,
+   "pares_duplicados_teste": 102,
+   "auc_roc": 0.818,
+   "pr_auc": 0.515,
+   "precisao": 0.335,
+   "recall": 0.902,
+   "f1": 0.488,
+   "hit@1": 0.662,
+   "hit@3": 0.868,
+   "mrr": 0.778,
+   "cenario_duplicada_ja_existe_correto": 0.662,
+   "cenario_nova_falso_alarme": 0.926,
+   "cenario_nova_marcada_parecida": 0.074,
+   "consultas_teste": 68
+  },
+  {
+   "agrupamento": {
+    "propostas": 68,
+    "problemas_reais": 17,
+    "grupos_encontrados": 16,
+    "ari": 0.6,
+    "homogeneidade": 0.848,
+    "completude": 0.948
+   },
+   "embedder": "tfidf",
+   "limiares": {
+    "duplicada": 0.23,
+    "relacionada": 0.116
+   },
+   "pares_teste": 550,
+   "pares_duplicados_teste": 102,
+   "auc_roc": 0.904,
+   "pr_auc": 0.769,
+   "precisao": 0.374,
+   "recall": 0.892,
+   "f1": 0.528,
+   "hit@1": 0.912,
+   "hit@3": 0.985,
+   "mrr": 0.947,
+   "cenario_duplicada_ja_existe_correto": 0.897,
+   "cenario_nova_falso_alarme": 0.912,
+   "cenario_nova_marcada_parecida": 0.088,
+   "consultas_teste": 68
+  },
+  {
+   "juiz_llm": {
+    "consultas": 68,
+    "candidatas_julgadas": 338,
+    "acuracia_do_veredito": 0.979,
+    "cenario_duplicada_ja_existe_correto": 1.0,
+    "cenario_nova_falso_alarme": 0.059
+   },
+   "agrupamento": {
+    "propostas": 68,
+    "problemas_reais": 17,
+    "grupos_encontrados": 18,
+    "ari": 0.963,
+    "homogeneidade": 0.993,
+    "completude": 0.977
+   },
+   "embedder": "openai",
+   "limiares": {
+    "duplicada": 0.588,
+    "relacionada": 0.54
+   },
+   "pares_teste": 550,
+   "pares_duplicados_teste": 102,
+   "auc_roc": 0.984,
+   "pr_auc": 0.934,
+   "precisao": 0.8,
+   "recall": 0.902,
+   "f1": 0.848,
+   "hit@1": 0.941,
+   "hit@3": 1.0,
+   "mrr": 0.968,
+   "cenario_duplicada_ja_existe_correto": 0.941,
+   "cenario_nova_falso_alarme": 0.515,
+   "cenario_nova_marcada_parecida": 0.279,
+   "consultas_teste": 68
+  }
+ ],
+ "categoria": [
+  {
+   "embedder": "palavras",
+   "acuracia": 0.431,
+   "f1_macro": 0.423,
+   "baseline_maioria_acuracia": 0.278,
+   "categorias": [
+    "mobilidade",
+    "zeladoria",
+    "saúde",
+    "lazer"
+   ],
+   "matriz_confusao": [
+    [
+     10,
+     23,
+     7,
+     0
+    ],
+    [
+     15,
+     17,
+     3,
+     1
+    ],
+    [
+     2,
+     0,
+     23,
+     11
+    ],
+    [
+     1,
+     0,
+     19,
+     12
+    ]
+   ],
+   "erros": [
+    [
+     "Pedimos o conserto do buraco da Rua das Flores. Os carros desviam e quase batem.",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "buraco na rua das flores perto da padaria ta perigoso demais, moto cai todo dia",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "A Rua das Flores está com uma cratera no asfalto. Precisa tapar antes que aconteça acidente.",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "Falta faixa de pedestres na frente da Escola Municipal Santos Dumont.",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "Pedimos pintura de faixa de pedestre na porta da escola Santos Dumont, os carros não param.",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "as crianças atravessam sem faixa na escola santos dumont, precisa pintar",
+     "mobilidade",
+     "zeladoria"
+    ]
+   ]
+  },
+  {
+   "embedder": "tfidf",
+   "acuracia": 0.431,
+   "f1_macro": 0.429,
+   "baseline_maioria_acuracia": 0.278,
+   "categorias": [
+    "mobilidade",
+    "zeladoria",
+    "saúde",
+    "lazer"
+   ],
+   "matriz_confusao": [
+    [
+     15,
+     20,
+     5,
+     0
+    ],
+    [
+     14,
+     14,
+     5,
+     3
+    ],
+    [
+     5,
+     4,
+     22,
+     5
+    ],
+    [
+     3,
+     4,
+     14,
+     11
+    ]
+   ],
+   "erros": [
+    [
+     "Pedimos o conserto do buraco da Rua das Flores. Os carros desviam e quase batem.",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "buraco na rua das flores perto da padaria ta perigoso demais, moto cai todo dia",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "A Rua das Flores está com uma cratera no asfalto. Precisa tapar antes que aconteça acidente.",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "Semáforo queimado na Av. Brasil. Ninguém respeita e já teve batida.",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "Falta faixa de pedestres na frente da Escola Municipal Santos Dumont.",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "Pedimos pintura de faixa de pedestre na porta da escola Santos Dumont, os carros não param.",
+     "mobilidade",
+     "zeladoria"
+    ]
+   ]
+  },
+  {
+   "embedder": "openai",
+   "acuracia": 0.812,
+   "f1_macro": 0.82,
+   "baseline_maioria_acuracia": 0.278,
+   "categorias": [
+    "mobilidade",
+    "zeladoria",
+    "saúde",
+    "lazer"
+   ],
+   "matriz_confusao": [
+    [
+     30,
+     8,
+     2,
+     0
+    ],
+    [
+     7,
+     28,
+     0,
+     1
+    ],
+    [
+     0,
+     4,
+     32,
+     0
+    ],
+    [
+     0,
+     4,
+     1,
+     27
+    ]
+   ],
+   "erros": [
+    [
+     "Tem um buraco enorme na Rua das Flores, em frente à padaria, e já quebrou roda de carro.",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "buraco na rua das flores perto da padaria ta perigoso demais, moto cai todo dia",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "A Rua das Flores está com uma cratera no asfalto. Precisa tapar antes que aconteça acidente.",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "Pedimos pintura de faixa de pedestre na porta da escola Santos Dumont, os carros não param.",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "as crianças atravessam sem faixa na escola santos dumont, precisa pintar",
+     "mobilidade",
+     "zeladoria"
+    ],
+    [
+     "Sem faixa de pedestre na entrada da escola, a rua Santos Dumont é movimentada.",
+     "mobilidade",
+     "zeladoria"
+    ]
+   ]
+  }
+ ],
+ "falsos_alarmes": {
+  "palavras": [
+   [
+    "O semáforo do cruzamento da Avenida Brasil com a Rua das Flores está apagado há uma semana.",
+    "Consertar o passeio da Rua das Flores e colocar rampa para cadeirantes.",
+    0.441
+   ],
+   [
+    "o sinal da avenida brasil não funciona, as crianças da escola atravessam correndo",
+    "Os brinquedos da Praça das Acácias estão quebrados e enferrujados, as crianças se machucam.",
+    0.24
+   ],
+   [
+    "Cruzamento sem semáforo funcionando na Avenida Brasil esquina com a Rua das Flores, urgente.",
+    "Consertar o passeio da Rua das Flores e colocar rampa para cadeirantes.",
+    0.461
+   ],
+   [
+    "O ponto de ônibus da Rua XV de Novembro não tem cobertura, idosos esperam no sol e na chuva.",
+    "Pichação em prédios e muros da Rua XV de Novembro, pedimos limpeza.",
+    0.379
+   ],
+   [
+    "Precisamos de abrigo no ponto de ônibus da XV de Novembro.",
+    "Pedimos fiscalização de estacionamento irregular na calçada da XV de Novembro.",
+    0.379
+   ]
+  ],
+  "tfidf": [
+   [
+    "O semáforo do cruzamento da Avenida Brasil com a Rua das Flores está apagado há uma semana.",
+    "a luz da rua das flores apagou tudo, não dá pra andar a noite",
+    0.232
+   ],
+   [
+    "o sinal da avenida brasil não funciona, as crianças da escola atravessam correndo",
+    "Pedimos vacinação das crianças dentro das escolas do Jardim das Acácias.",
+    0.307
+   ],
+   [
+    "O ponto de ônibus da Rua XV de Novembro não tem cobertura, idosos esperam no sol e na chuva.",
+    "tem carro parado na calçada da xv de novembro, a gente tem que andar na rua",
+    0.274
+   ],
+   [
+    "Precisamos de abrigo no ponto de ônibus da XV de Novembro.",
+    "Os pedestres precisam descer para a rua porque veículos ocupam a calçada da Rua XV de Novembro.",
+    0.339
+   ],
+   [
+    "ponto de onibus sem cobertura na xv de novembro, quando chove todo mundo se molha",
+    "tem carro parado na calçada da xv de novembro, a gente tem que andar na rua",
+    0.287
+   ]
+  ],
+  "openai": [
+   [
+    "O semáforo do cruzamento da Avenida Brasil com a Rua das Flores está apagado há uma semana.",
+    "Os postes da Rua das Flores estão com a lâmpada queimada, a rua fica escura à noite.",
+    0.627
+   ],
+   [
+    "Solicito a instalação de cobertura e banco no ponto de ônibus da Rua XV de Novembro.",
+    "Pedimos fiscalização de estacionamento irregular na calçada da XV de Novembro.",
+    0.602
+   ],
+   [
+    "A calçada da Rua das Flores está toda quebrada, cadeirante não consegue passar.",
+    "Tem um buraco enorme na Rua das Flores, em frente à padaria, e já quebrou roda de carro.",
+    0.712
+   ],
+   [
+    "Calçada destruída na Rua das Flores, precisa de reforma e rampa de acessibilidade.",
+    "A Rua das Flores está com uma cratera no asfalto. Precisa tapar antes que aconteça acidente.",
+    0.667
+   ],
+   [
+    "Consertar o passeio da Rua das Flores e colocar rampa para cadeirantes.",
+    "Pedimos o conserto do buraco da Rua das Flores. Os carros desviam e quase batem.",
+    0.634
+   ]
+  ]
+ },
+ "aceitacao": [
+  {
+   "configuracao": "tfidf (fallback, sem LLM)",
+   "casos": 40,
+   "acuracia_geral": 0.675,
+   "duplicadas_detectadas": "18/20",
+   "duplicadas_top1_certo": "20/20",
+   "novas_faceis_sem_alarme": "6/10",
+   "novas_dificeis_sem_alarme": "3/10",
+   "recall_duplicadas": 0.9,
+   "precisao_ja_existe": 0.72,
+   "falhas": [
+    [
+     "nova_facil",
+     "Instalar um bicicletário seguro no terminal de ônibus do Jardim das Acácias",
+     "ja_existe",
+     "A marcação de consultas no posto do Jardim das Acácias demora mais de três meses"
+    ],
+    [
+     "nova_facil",
+     "Construir uma quadra de vôlei de areia no Parque Industrial",
+     "ja_existe",
+     "Construir passarela sobre a rodovia para os trabalhadores do Parque Industrial…"
+    ],
+    [
+     "nova_dificil",
+     "Falta bebedouro na quadra esportiva da Vila Nova",
+     "ja_existe",
+     "A quadra esportiva da Vila Nova está sem rede, sem tabela e com o piso rachado"
+    ]
+   ]
+  },
+  {
+   "configuracao": "tfidf + GPT juiz",
+   "casos": 40,
+   "acuracia_geral": 1.0,
+   "duplicadas_detectadas": "20/20",
+   "duplicadas_top1_certo": "20/20",
+   "novas_faceis_sem_alarme": "10/10",
+   "novas_dificeis_sem_alarme": "10/10",
+   "recall_duplicadas": 1.0,
+   "precisao_ja_existe": 1.0,
+   "falhas": []
+  },
+  {
+   "configuracao": "openai + GPT juiz",
+   "casos": 40,
+   "acuracia_geral": 0.95,
+   "duplicadas_detectadas": "20/20",
+   "duplicadas_top1_certo": "20/20",
+   "novas_faceis_sem_alarme": "10/10",
+   "novas_dificeis_sem_alarme": "8/10",
+   "recall_duplicadas": 1.0,
+   "precisao_ja_existe": 0.909,
+   "falhas": [
+    [
+     "nova_dificil",
+     "A Rua das Indústrias precisa de calçada, os trabalhadores andam no meio da rua",
+     "ja_existe",
+     "Construir passarela sobre a rodovia para os trabalhadores do Parque Industrial…"
+    ],
+    [
+     "nova_dificil",
+     "Instalar iluminação na pista de caminhada do Parque Industrial",
+     "ja_existe",
+     "Construir passarela sobre a rodovia para os trabalhadores do Parque Industrial…"
+    ]
+   ]
+  }
+ ]
+}
